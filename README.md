@@ -2,7 +2,7 @@
 
 XXXX. Tell the employer what the task was. What you learned? What struggles you had?
 
-## Use Case Diagram
+## Use Cases
 
 As a user, I want to:
 

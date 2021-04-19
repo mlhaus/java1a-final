@@ -17,4 +17,4 @@ As a user, I want to:
 
 ## Class Diagram
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+![Book Class Diagram](images/ClassDiagram-Book.jpg)

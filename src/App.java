@@ -5,7 +5,7 @@ public class App {
         String menuTitle = "Main Menu";
         String prompt = "Select an option:";
         String[] menuOptions = {
-            "Option 1",
+            "Test Data",
             "Option 2",
             "Option 3"
         };
@@ -19,7 +19,7 @@ public class App {
             UIUtility.showSectionTitle(menuOptions[Integer.valueOf(choice) - 1]);
             switch (choice) {
                 case 1:
-
+                    Helpers.testData(scanner);
                     break;
                 case 2:
 

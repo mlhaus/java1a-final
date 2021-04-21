@@ -1,4 +1,4 @@
-package src;
+import java.time.LocalDate;
 public class Book implements Comparable<Book> {
     private String title;
     private String author;
@@ -7,8 +7,8 @@ public class Book implements Comparable<Book> {
     private boolean read;
 
     public Book() {
-        title = "";
-        author = "";
+        title = "No title";
+        author = "No author";
         dateAdded = LocalDate.now();
         numPages = 0;
         read = false;
@@ -22,6 +22,54 @@ public class Book implements Comparable<Book> {
         this.read = read;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public LocalDate getDateAdded() {
+        return dateAdded;
+    }
+
+    public void setDateAdded(String dateAdded) {
+        this.dateAdded = Helpers.convertStrToDate(dateAdded);
+    }
+
+    public int getNumPages() {
+        return numPages;
+    }
+
+    public void setNumPages(int numPages) {
+        this.numPages = numPages;
+    }
+
+    public boolean isRead() {
+        return read;
+    }
+
+    public void setRead(boolean read) {
+        this.read = read;
+    }
+
+    public String toString() {
+        String result = "";
+        result += "Title: " + title;
+        result += ", Author: " + author;
+        return result;
+    }
+
+    @Override
     public int compareTo(Book other) {
         int result = this.title.compareTo(other.title);
         if(result == 0) {
